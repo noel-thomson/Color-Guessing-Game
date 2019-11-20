@@ -53,7 +53,7 @@ for (var i = 0; i < squares.length; i++) {
   squares[i].addEventListener("click", function() {
       var clickedColor = this.style["background-color"];
       if(clickedColor === chosenColor) {
-        displayMessage.textContent = "Nice Work!";
+        displayMessage.textContent = "Success!";
         correctChoice(chosenColor);
       } else {
         this.style["background-color"] = "#232323";
@@ -108,7 +108,7 @@ hard.addEventListener("click", function() {
 
 function buttonTasks() {
   header.style["background-color"] = "steelblue";
-  displayMessage.textContent = "Click a Square!";
+  displayMessage.textContent = "(Red, Green, Blue)";
   reset.textContent = "Reset Colors";
   setSquareColors();
   chosenColor = chooseColor();
